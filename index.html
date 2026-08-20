@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VLibras - Acessibilidade</title>
+
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>VLibras e Acessibilidade</h1>
+        <p>Um site mais acessível para todos</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Informações do aluno</h2>
+
+            <p>
+                <strong>Nome:</strong> Henrique Grandchamp
+            </p>
+
+            <p>
+                <strong>Escola:</strong> Escola SESI 413
+            </p>
+        </section>
+
+        <section>
+            <h2>Por que é importante ter o VLibras no site?</h2>
+
+            <p>
+                O VLibras é uma ferramenta que ajuda a tornar
+                os sites mais acessíveis para pessoas surdas
+                que utilizam a Língua Brasileira de Sinais (Libras).
+            </p>
+
+            <p>
+                A ferramenta permite traduzir conteúdos escritos
+                em português para Libras, facilitando o acesso
+                à informação, à educação e ao conhecimento.
+            </p>
+
+            <p>
+                Por isso, utilizar o VLibras contribui para uma
+                internet mais inclusiva e acessível para todos.
+            </p>
+        </section>
+
+        <section>
+            <h2>Trecho de um livro</h2>
+
+            <p>
+                <em>
+                    "Tudo vale a pena se a alma não é pequena."
+                </em>
+            </p>
+
+            <p>
+                <strong>Livro:</strong> Mensagem
+            </p>
+
+            <p>
+                <strong>Autor:</strong> Fernando Pessoa
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Trabalho desenvolvido por Henrique Grandchamp</p>
+        <p>Escola SESI 413</p>
+    </footer>
+
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+
+        <div vw-access-button class="active"></div>
+
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+
+    </div>
+
+    <!-- Script do VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget(
+            'https://vlibras.gov.br/app'
+        );
+    </script>
+
+</body>
+
+</html>
